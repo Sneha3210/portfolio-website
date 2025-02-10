@@ -1,0 +1,228 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+p {
+    font-size: 18px; /* Adjust as needed */
+}
+h1, h2, h3 {
+    font-weight: bold; 
+    font-size: 25px; /* Adjust as needed */
+
+    /* 700 or 800 for extra bold */
+}
+h1 {
+    font-size: 30px; /* Adjust as needed */
+
+    color: #ff5733; /* Bright orange */
+}
+
+h2 {
+    color: #2575fc; /* Blue */
+}
+
+
+body {
+    scroll-behavior: smooth;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 60px; /* Prevents content from being hidden behind fixed navbar */
+}
+
+/* Header & Navigation */
+header {
+    background: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Hover & Active Link Effects */
+nav ul li a:hover,
+nav ul li a.active {
+    border-bottom: 3px solid #ffcc00;
+}
+
+/* Sections */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Home Section */
+#home {
+    background: black;
+    color: white;
+    padding-top: 100px;
+    min-height: 120vh; 
+    font-size: large;
+
+}
+
+#home img {
+   
+    width: 200px;  /* Set fixed width */
+    height: 200px; /* Set fixed height to match width */
+    object-fit: cover; /* Ensures the image is cropped evenly */
+    border-radius: 50%; 
+    border-radius: 50%; /* Ensures a perfect circle */
+    margin-top: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Adds depth */
+}
+
+
+/* About Section */
+#about {
+    background-color: aliceblue;
+    min-height: 120vh; 
+}
+
+#about ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+#about ul li {
+    background: #333;
+    color:lightgray;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* Projects Section */
+#projects {
+    background:lightslategray;
+    min-height: 120vh; 
+}
+
+.project {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Contact Section */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+    min-height: 120vh; 
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact button {
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#contact button:hover {
+    background: #ffcc00;
+}
+
+
+/* Social Links (Positioning & Styling) */
+.social-links {
+    text-align: center;
+    margin-top: 10px; /* Increase space between form and links */
+}
+
+.social-links h3 {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Style Social Media Links */
+.social-links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 15px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    background: #2575fc;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    background: #ffcc00;
+    color: black;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #about ul {
+        justify-content: center;
+    }
+}
